@@ -9,8 +9,8 @@ dependencies:
     specifier: ^4.18.2
     version: 4.18.2
   kaioken:
-    specifier: ^0.7.0
-    version: 0.7.0
+    specifier: ^0.7.1
+    version: 0.7.1
   tsx:
     specifier: ^4.7.1
     version: 4.7.1
@@ -1134,8 +1134,8 @@ packages:
     hasBin: true
     dev: true
 
-  /kaioken@0.7.0:
-    resolution: {integrity: sha512-mPNCJOVrfYC7NhB5WYwFxLSa475cjI/ZEIQud6/7Mbl2ANL9bz6/5kAupn7Kb1Z4G60Fyc/bVys1RMYGVW3qxg==}
+  /kaioken@0.7.1:
+    resolution: {integrity: sha512-xvlymjNSu4EfW33AvOwUOidpP9eg0YynO7SQh8pvHiwOT5bHrDd33uWIpTbDZLfWsEbIVQk0PwoCr9G4pjrEaQ==}
     dev: false
 
   /lilconfig@2.1.0:
