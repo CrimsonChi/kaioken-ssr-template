@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^5.3.3
     version: 5.3.3
   vite-plugin-kaioken:
-    specifier: ^0.0.5
-    version: 0.0.5
+    specifier: ^0.0.6
+    version: 0.0.6
 
 packages:
 
@@ -1801,8 +1801,8 @@ packages:
       vite: 5.1.1
     dev: false
 
-  /vite-plugin-kaioken@0.0.5:
-    resolution: {integrity: sha512-0JHVtn1G1hGC8gw9y2f7OI3acwPVHJLABbZWRXENLi1B25lwFdm/hX0PLO5ir/3isEX4JTgtlofJmdReV54yKA==}
+  /vite-plugin-kaioken@0.0.6:
+    resolution: {integrity: sha512-tk/PILp11PkmMpZrPVYwbHwQ0GCD4wnd3HEnutMO1jxfoiV4yr5uuWegoEHKmssEa34bQrTAX0Q9Ehr/4MAcxg==}
     dev: true
 
   /vite@5.1.1:
