@@ -37,11 +37,15 @@ async function startServer() {
   app.all("*", async (req, res, next) => {
     const pageContextInit = { urlOriginal: req.originalUrl }
     const pageContext = await renderPage(pageContextInit)
-    if (pageContext.httpResponse === null) return next()
+    const { httpResponse } = pageContext
+    if (httpResponse === null) return next()
 
-    const { statusCode, contentType } = pageContext.httpResponse
-    res.status(statusCode).type(contentType)
-    pageContext.httpResponse.pipe(res)
+    const { body, statusCode, headers, earlyHints } = httpResponse
+    if (res.writeEarlyHints)
+      res.writeEarlyHints({ link: earlyHints.map((e) => e.earlyHintLink) })
+    res.status(statusCode)
+    headers.forEach(([name, value]) => res.setHeader(name, value))
+    res.send(body)
   })
 
   app.listen(process.env.PORT ? parseInt(process.env.PORT) : 3000, () => {
