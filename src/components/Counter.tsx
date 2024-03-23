@@ -1,5 +1,4 @@
 import { useState } from "kaioken"
-import { Button } from "./atoms/Button"
 
 export function Counter() {
   const [count, setCount] = useState(0)
@@ -7,9 +6,12 @@ export function Counter() {
   return (
     <>
       <span>Count: {count}</span>{" "}
-      <Button variant="primary" onclick={() => setCount((prev) => prev + 1)}>
+      <button
+        onclick={() => setCount((prev) => prev + 1)}
+        className="bg-primary hover:bg-primary-light text-white font-bold text-sm py-2 px-4 rounded"
+      >
         Increment
-      </Button>
+      </button>
     </>
   )
 }

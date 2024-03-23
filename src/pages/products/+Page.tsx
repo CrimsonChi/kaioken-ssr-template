@@ -1,4 +1,4 @@
-import { PageTitle } from "$/components/atoms/PageTitle"
+import { PageTitle } from "$/components/PageTitle"
 import type { ServerProps } from "./+data"
 
 export function Page({ products }: ServerProps) {
