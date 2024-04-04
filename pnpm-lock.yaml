@@ -9,8 +9,8 @@ dependencies:
     specifier: ^4.19.2
     version: 4.19.2
   kaioken:
-    specifier: ^0.13.0
-    version: 0.13.0
+    specifier: ^0.13.4
+    version: 0.13.4
   tsx:
     specifier: ^4.7.1
     version: 4.7.1
@@ -42,7 +42,7 @@ devDependencies:
     version: 5.4.3
   vite-plugin-kaioken:
     specifier: ^0.1.2
-    version: 0.1.2(kaioken@0.13.0)(vite@5.2.7)
+    version: 0.1.2(kaioken@0.13.4)(vite@5.2.7)
 
 packages:
 
@@ -671,7 +671,7 @@ packages:
       '@types/body-parser': 1.19.5
       '@types/express-serve-static-core': 4.17.43
       '@types/qs': 6.9.14
-      '@types/serve-static': 1.15.5
+      '@types/serve-static': 1.15.6
     dev: true
 
   /@types/http-errors@2.0.4:
@@ -680,13 +680,6 @@ packages:
 
   /@types/mime@1.3.5:
     resolution: {integrity: sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==}
-    dev: true
-
-  /@types/mime@4.0.0:
-    resolution: {integrity: sha512-5eEkJZ/BLvTE3vXGKkWlyTSUVZuzj23Wj8PoyOq2lt5I3CYbiLBOPb3XmCW6QcuOibIUE6emHXHt9E/F/rCa6w==}
-    deprecated: This is a stub types definition. mime provides its own type definitions, so you do not need this installed.
-    dependencies:
-      mime: 4.0.1
     dev: true
 
   /@types/node@20.12.2:
@@ -710,12 +703,12 @@ packages:
       '@types/node': 20.12.2
     dev: true
 
-  /@types/serve-static@1.15.5:
-    resolution: {integrity: sha512-PDRk21MnK70hja/YF8AHfC7yIsiQHn1rcXx7ijCFBX/k+XQJhQT/gw3xekXKJvx+5SXaMMS8oqQy09Mzvz2TuQ==}
+  /@types/serve-static@1.15.6:
+    resolution: {integrity: sha512-xkChxykiNb1X2YBevPIhQhNU9m9M7h9e2gDsmePAP2kNqhOvpKOrZWOCzq2ERQqfNFzlzHG2bdM0u3z5x+gQgg==}
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/mime': 4.0.0
       '@types/node': 20.12.2
+      '@types/send': 0.17.4
     dev: true
 
   /accepts@1.3.8:
@@ -782,7 +775,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.23.0
-      caniuse-lite: 1.0.30001603
+      caniuse-lite: 1.0.30001605
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -836,8 +829,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001603
-      electron-to-chromium: 1.4.722
+      caniuse-lite: 1.0.30001605
+      electron-to-chromium: 1.4.724
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: true
@@ -872,8 +865,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /caniuse-lite@1.0.30001603:
-    resolution: {integrity: sha512-iL2iSS0eDILMb9n5yKQoTBim9jMZ0Yrk8g0N9K7UzYyWnfIKzXBZD5ngpM37ZcL/cv0Mli8XtVMRYMQAfFpi5Q==}
+  /caniuse-lite@1.0.30001605:
+    resolution: {integrity: sha512-nXwGlFWo34uliI9z3n6Qc0wZaf7zaZWA1CPZ169La5mV3I/gem7bst0vr5XQH5TJXZIMfDeZyOrZnSlVzKxxHQ==}
     dev: true
 
   /chokidar@3.6.0:
@@ -989,8 +982,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: false
 
-  /electron-to-chromium@1.4.722:
-    resolution: {integrity: sha512-5nLE0TWFFpZ80Crhtp4pIp8LXCztjYX41yUcV6b+bKR2PqzjskTMOOlBi1VjBHlvHwS+4gar7kNKOrsbsewEZQ==}
+  /electron-to-chromium@1.4.724:
+    resolution: {integrity: sha512-RTRvkmRkGhNBPPpdrgtDKvmOEYTrPlXDfc0J/Nfq5s29tEahAwhiX4mmhNzj6febWMleulxVYPh7QwCSL/EldA==}
     dev: true
 
   /emoji-regex@8.0.0:
@@ -1351,8 +1344,8 @@ packages:
     hasBin: true
     dev: true
 
-  /kaioken@0.13.0:
-    resolution: {integrity: sha512-jkvVmY3+wWcqu71kJ9q8DbbZsWrN2yWvjLwJovJERg/eQgjWGh9LGM1tyTmtRwioXQpVKOT7XYDgNcV/iURs2w==}
+  /kaioken@0.13.4:
+    resolution: {integrity: sha512-p48XX2IPYZ83B6rjH+nPN1//pOErdFzz6vp44jXxkBdn7UnAsxzkj2XzEsziaPR+Gax3leGQKTTwDK0LvqX4YQ==}
 
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
@@ -1415,12 +1408,6 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
     dev: false
-
-  /mime@4.0.1:
-    resolution: {integrity: sha512-5lZ5tyrIfliMXzFtkYyekWbtRXObT9OWa8IwQ5uxTBDHucNNwniRqo0yInflj+iYi5CBa6qxadGzGarDfuEOxA==}
-    engines: {node: '>=16'}
-    hasBin: true
-    dev: true
 
   /minimatch@9.0.4:
     resolution: {integrity: sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==}
@@ -2024,13 +2011,13 @@ packages:
       vite: 5.2.7
     dev: false
 
-  /vite-plugin-kaioken@0.1.2(kaioken@0.13.0)(vite@5.2.7):
+  /vite-plugin-kaioken@0.1.2(kaioken@0.13.4)(vite@5.2.7):
     resolution: {integrity: sha512-E/yQGMbGCyqEELr7qamcI7H91SpWH9vyFndKzyY2v1uFnuDn/bkBYaPp/AyULAOEaq144DAqNfl+l2kYh4ZlnA==}
     peerDependencies:
       kaioken: '>0.12.0'
       vite: ^5.0.8
     dependencies:
-      kaioken: 0.13.0
+      kaioken: 0.13.4
       vite: 5.2.7
     dev: true
 

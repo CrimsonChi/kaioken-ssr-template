@@ -1,21 +1,21 @@
-import { createContext, useContext } from "kaioken"
+import { children, createContext, useContext } from "kaioken"
 
 export { usePageContext, PageContextProvider }
 
-const Context = createContext<Vike.PageContext & { isClient: boolean }>(null)
+const Context = createContext<Vike.PageContext & { isClient: boolean }>(
+  null as any
+)
 
 function PageContextProvider({
   pageContext,
-  children,
 }: {
   pageContext: Vike.PageContext
-  children?: JSX.Element[]
 }) {
   return (
     <Context.Provider
       value={{ ...pageContext, isClient: !!globalThis.window?.location }}
     >
-      {children}
+      {children()}
     </Context.Provider>
   )
 }
