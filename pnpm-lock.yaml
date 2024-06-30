@@ -43,8 +43,8 @@ importers:
         specifier: ^5.4.3
         version: 5.4.3
       vite-plugin-kaioken:
-        specifier: ^0.4.0
-        version: 0.4.0(kaioken@0.21.0)
+        specifier: ^0.5.0
+        version: 0.5.0(kaioken@0.21.0)
 
 packages:
 
@@ -1217,10 +1217,10 @@ packages:
       react-streaming:
         optional: true
 
-  vite-plugin-kaioken@0.4.0:
-    resolution: {integrity: sha512-mwXCSeMBglFx5XJBdkA07eJHaIXA8bNBgUjiH4yy77fEyzy1C23x730DUG29Dccvv7XWKRRrtKM7NBlKMX491A==}
+  vite-plugin-kaioken@0.5.0:
+    resolution: {integrity: sha512-lN5BTQA8bYc0j0FxT/ob054pcqYrzIS0/IpaaiNZpUzK0LPK+fqdM1dGZkwV8aBmSTy9Six3ZyW9E48FXu0nLQ==}
     peerDependencies:
-      kaioken: '>=0.18.0'
+      kaioken: '>=0.21.0'
 
   vite@5.2.7:
     resolution: {integrity: sha512-k14PWOKLI6pMaSzAuGtT+Cf0YmIx12z9YGon39onaJNy8DLBfBJrzg9FQEmkAM5lpHBZs9wksWAsyF/HkpEwJA==}
@@ -2341,7 +2341,7 @@ snapshots:
       source-map-support: 0.5.21
       vite: 5.2.7(@types/node@20.12.2)
 
-  vite-plugin-kaioken@0.4.0(kaioken@0.21.0):
+  vite-plugin-kaioken@0.5.0(kaioken@0.21.0):
     dependencies:
       kaioken: 0.21.0
 
