@@ -12,8 +12,8 @@ importers:
         specifier: ^4.19.2
         version: 4.19.2
       kaioken:
-        specifier: ^0.21.0
-        version: 0.21.0
+        specifier: ^0.21.1
+        version: 0.21.1
       tsx:
         specifier: ^4.7.1
         version: 4.7.1
@@ -43,8 +43,8 @@ importers:
         specifier: ^5.4.3
         version: 5.4.3
       vite-plugin-kaioken:
-        specifier: ^0.5.0
-        version: 0.5.0(kaioken@0.21.0)
+        specifier: ^0.5.1
+        version: 0.5.1(kaioken@0.21.1)
 
 packages:
 
@@ -830,8 +830,8 @@ packages:
     resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
     hasBin: true
 
-  kaioken@0.21.0:
-    resolution: {integrity: sha512-2ZH/3oMO9C6W8aK59WjXcWqwG6w7KnbYN1olNqz4CW00X2gr3Ge1R5ZFR3pk+AuVHz+XfbS4booV41BYvlvWlg==}
+  kaioken@0.21.1:
+    resolution: {integrity: sha512-VtM7GUu5hl62YaJitihUIAIGCiWwNRxvpW4KzA84+XBgrkpPomL3gt0huYuCNe9FCSIDqit5l5HSRBoX5HvmGg==}
 
   lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
@@ -1217,10 +1217,10 @@ packages:
       react-streaming:
         optional: true
 
-  vite-plugin-kaioken@0.5.0:
-    resolution: {integrity: sha512-lN5BTQA8bYc0j0FxT/ob054pcqYrzIS0/IpaaiNZpUzK0LPK+fqdM1dGZkwV8aBmSTy9Six3ZyW9E48FXu0nLQ==}
+  vite-plugin-kaioken@0.5.1:
+    resolution: {integrity: sha512-bCHB8yDEMqGcF3sgGlfW02KAvrrt07AM7l8z0RaXMOjYfBCIt5mU+ewFWwcu/6NrYXFqzRMsx4C0DJzQ2/Qt7g==}
     peerDependencies:
-      kaioken: '>=0.21.0'
+      kaioken: '>=0.21.1'
 
   vite@5.2.7:
     resolution: {integrity: sha512-k14PWOKLI6pMaSzAuGtT+Cf0YmIx12z9YGon39onaJNy8DLBfBJrzg9FQEmkAM5lpHBZs9wksWAsyF/HkpEwJA==}
@@ -1952,7 +1952,7 @@ snapshots:
 
   jiti@1.21.0: {}
 
-  kaioken@0.21.0: {}
+  kaioken@0.21.1: {}
 
   lilconfig@2.1.0: {}
 
@@ -2341,9 +2341,9 @@ snapshots:
       source-map-support: 0.5.21
       vite: 5.2.7(@types/node@20.12.2)
 
-  vite-plugin-kaioken@0.5.0(kaioken@0.21.0):
+  vite-plugin-kaioken@0.5.1(kaioken@0.21.1):
     dependencies:
-      kaioken: 0.21.0
+      kaioken: 0.21.1
 
   vite@5.2.7(@types/node@20.12.2):
     dependencies:
