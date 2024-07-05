@@ -1,4 +1,4 @@
-import { dirname } from "node:path"
+import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 import express from "express"
 import { renderPage } from "vike/server"
@@ -6,7 +6,7 @@ import { renderPage } from "vike/server"
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const isProduction = process.env.NODE_ENV === "production"
-const root = __dirname
+const root = resolve(__dirname, "..")
 
 startServer()
 
