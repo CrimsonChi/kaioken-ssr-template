@@ -16,5 +16,5 @@ export const onRenderClient: OnRenderClientAsync = async (pageContext) => {
   }
 
   document.title = getTitle(pageContext)
-  appContext.setProps(() => ({ pageContext }))
+  await appContext.setProps(() => ({ pageContext }))
 }
