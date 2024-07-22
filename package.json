@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "express": "^4.19.2",
-    "kaioken": "^0.23.5",
+    "kaioken": "^0.23.6",
     "tsx": "^4.16.2",
     "vike": "^0.4.180",
     "vite": "^5.3.4"
