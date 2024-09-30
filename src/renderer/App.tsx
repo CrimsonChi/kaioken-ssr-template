@@ -1,11 +1,25 @@
+import "./global.css"
 import { PageContext } from "vike/types"
-import { PageShell } from "./PageShell"
+import { PageContextProvider } from "$/context/pageContext"
+import { LayoutDefault } from "$/layouts/LayoutDefault"
 
 export function App({ pageContext }: { pageContext: PageContext }) {
-  const { Page, data = {} } = pageContext
+  const {
+    data = {},
+    config: { Layout: PageLayout, Page },
+  } = pageContext
+
   return (
-    <PageShell pageContext={pageContext}>
-      <Page {...data} />
-    </PageShell>
+    <PageContextProvider pageContext={pageContext}>
+      <LayoutDefault>
+        {PageLayout ? (
+          <PageLayout>
+            <Page {...data} />
+          </PageLayout>
+        ) : (
+          <Page {...data} />
+        )}
+      </LayoutDefault>
+    </PageContextProvider>
   )
 }

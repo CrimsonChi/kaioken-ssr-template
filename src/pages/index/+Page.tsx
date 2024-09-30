@@ -1,11 +1,12 @@
-import { PageTitle } from "$/components/PageTitle"
+import { Counter } from "$/components/Counter"
 
-export { Page }
-
-function Page() {
+export function Page() {
   return (
-    <div className="w-full h-full flex items-center justify-center">
-      <PageTitle>Home</PageTitle>
-    </div>
+    <>
+      <h1 className="text-3xl md:text-4xl md:leading-normal font-bold text-center">
+        Welcome to your Kaioken SSR app!
+      </h1>
+      <Counter />
+    </>
   )
 }

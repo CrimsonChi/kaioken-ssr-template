@@ -3,13 +3,9 @@
 declare global {
   namespace Vike {
     interface PageContext {
-      abortReason?: string | { notAdmin: true }
+      abortReason?: string
       abortStatusCode?: number
       is404?: boolean
-
-      Page: Kaioken.FC
-      Layout: Kaioken.FC
-      title: string | ((ctx: PageContext) => string)
 
       config: {
         title: string | ((ctx: PageContext) => string)
