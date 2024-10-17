@@ -1,13 +1,13 @@
-import { useState, useRef, useCallback } from "kaioken"
+import { useRef, useCallback, signal } from "kaioken"
 
 export function Counter() {
+  const count = signal(0)
   const countRef = useRef<HTMLDivElement>(null)
   const animRef = useRef<Animation>()
-  const [count, setCount] = useState(0)
 
   const handleClick = useCallback(() => {
     if (!countRef.current) return
-    setCount((prev) => prev + 1)
+    count.value++
 
     animRef.current?.finish()
     animRef.current = countRef.current.animate(
