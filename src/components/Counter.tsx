@@ -6,18 +6,17 @@ export function Counter() {
   const animRef = useRef<Animation>()
 
   const handleClick = useCallback(() => {
-    if (!countRef.current) return
     count.value++
 
     animRef.current?.finish()
-    animRef.current = countRef.current.animate(
+    animRef.current = countRef.current?.animate(
       [{ transform: "scale(2.5)" }, { transform: "scale(1)" }],
       {
         duration: 300,
         iterations: 1,
       }
     )
-  }, [countRef.current])
+  }, [])
 
   return (
     <div className="flex flex-col gap-8 justify-center items-center">
