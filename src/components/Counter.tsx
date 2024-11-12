@@ -1,7 +1,7 @@
-import { useRef, useCallback, signal } from "kaioken"
+import { useRef, useCallback, useSignal } from "kaioken"
 
 export function Counter() {
-  const count = signal(0)
+  const count = useSignal(0)
   const countRef = useRef<HTMLDivElement>(null)
   const animRef = useRef<Animation>()
 
