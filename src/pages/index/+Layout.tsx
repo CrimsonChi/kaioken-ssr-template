@@ -1,6 +1,6 @@
-export function LayoutDefault({ children }: { children: JSX.Children }) {
+export function Layout({ children }: { children: JSX.Children }) {
   return (
-    <div className="min-h-screen flex flex-col gap-20 justify-between px-10 py-20">
+    <>
       {children}
       <div className="text-center text-stone-200">
         <p>Learn at</p>
@@ -23,6 +23,6 @@ export function LayoutDefault({ children }: { children: JSX.Children }) {
           </a>
         </div>
       </div>
-    </div>
+    </>
   )
 }

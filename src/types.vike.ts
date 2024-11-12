@@ -10,11 +10,10 @@ declare global {
       config: {
         title: string | ((ctx: PageContext) => string)
         Page: Kaioken.FC
-        Layout?: Kaioken.FC
+        Layout: Kaioken.FC[]
       }
 
       routeParams: Record<string, string>
-
       data: Record<string, unknown>
     }
   }
