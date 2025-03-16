@@ -6,24 +6,24 @@
   "scripts": {
     "dev": "vike dev",
     "build": "vike build",
-    "preview": "set NODE_ENV=production&& vike preview"
+    "preview": "vike preview"
   },
   "keywords": [],
   "author": "",
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.14",
     "@types/express": "^5.0.0",
-    "postcss": "^8.4.49",
-    "prettier": "^3.4.1",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
     "tailwindcss": "^4.0.14",
-    "typescript": "^5.7.2",
-    "vite-plugin-kaioken": "0.15.0"
+    "typescript": "^5.8.2",
+    "vite-plugin-kaioken": "0.16.0"
   },
   "dependencies": {
-    "express": "^4.21.1",
-    "kaioken": "0.35.10",
-    "tsx": "^4.19.2",
-    "vike": "^0.4.224",
-    "vite": "^6.2.0"
+    "express": "^4.21.2",
+    "kaioken": "0.36.0",
+    "tsx": "^4.19.3",
+    "vike": "^0.4.225",
+    "vite": "^6.2.2"
   }
 }
