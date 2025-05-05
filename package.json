@@ -18,11 +18,11 @@
     "tailwindcss": "^4.1.5",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
-    "vite-plugin-kaioken": "0.18.3"
+    "vite-plugin-kaioken": "0.18.4"
   },
   "dependencies": {
     "express": "^5.1.0",
-    "kaioken": "0.38.3",
+    "kaioken": "0.38.4",
     "vike": "^0.4.229"
   }
 }
