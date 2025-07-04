@@ -17,12 +17,12 @@
     "prettier": "^3.6.2",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
-    "vite": "^7.0.0",
-    "vite-plugin-kaioken": "0.20.4"
+    "vite": "^7.0.2",
+    "vite-plugin-kaioken": "0.20.5"
   },
   "dependencies": {
     "express": "^5.1.0",
-    "kaioken": "0.40.6",
+    "kaioken": "0.40.7",
     "vike": "^0.4.235"
   }
 }
