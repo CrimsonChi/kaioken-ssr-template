@@ -1,11 +1,11 @@
-import { useRef, useCallback, useSignal } from "kaioken"
+import { useRef, useSignal } from "kaioken"
 
 export function Counter() {
   const count = useSignal(0)
   const countRef = useRef<HTMLDivElement>(null)
   const animRef = useRef<Animation>()
 
-  const handleClick = useCallback(() => {
+  const handleClick = () => {
     count.value++
 
     animRef.current?.finish()
@@ -16,7 +16,7 @@ export function Counter() {
         iterations: 1,
       }
     )
-  }, [])
+  }
 
   return (
     <div className="flex flex-col gap-8 justify-center items-center">
