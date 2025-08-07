@@ -6,12 +6,12 @@ export function Layout({ children }: { children: JSX.Children }) {
         <p>Learn at</p>
         <div className="flex gap-4 text-xl w-full justify-center">
           <a
-            href="https://kaioken.dev"
+            href="https://kirujs.dev"
             target="_blank"
             className="font-semibold flex items-center gap-1 w-full justify-end"
           >
-            <img className="w-5 h-5" src="/favicon.svg" alt="kaioken logo" />
-            kaioken.dev
+            <img className="w-5 h-5" src="/favicon.svg" alt="kiru logo" />
+            kirujs.dev
           </a>
           <a
             href="https://vike.dev"

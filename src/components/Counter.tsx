@@ -1,4 +1,4 @@
-import { useRef, useSignal } from "kaioken"
+import { useRef, useSignal } from "kiru"
 
 export function Counter() {
   const count = useSignal(0)
@@ -24,7 +24,7 @@ export function Counter() {
         <img
           src="/favicon.svg"
           className="w-32 h-32 animate-pulse"
-          alt="kaioken logo"
+          alt="kiru logo"
         />
       </button>
       <span ref={countRef} className="text-4xl font-medium select-none">

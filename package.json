@@ -1,5 +1,5 @@
 {
-  "name": "kaioken-vike-template",
+  "name": "kiru-vike-template",
   "version": "0.0.1",
   "description": "",
   "type": "module",
@@ -18,11 +18,11 @@
     "tailwindcss": "^4.1.11",
     "typescript": "^5.9.2",
     "vite": "^7.0.6",
-    "vite-plugin-kaioken": "0.23.0"
+    "vite-plugin-kiru": "0.24.0"
   },
   "dependencies": {
     "express": "^5.1.0",
-    "kaioken": "0.44.3",
+    "kiru": "0.45.1",
     "vike": "^0.4.236"
   }
 }

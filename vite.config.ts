@@ -1,7 +1,7 @@
 import path from "node:path"
 import { defineConfig } from "vite"
 import vike from "vike/plugin"
-import kaioken from "vite-plugin-kaioken"
+import kiru from "vite-plugin-kiru"
 
 export default defineConfig({
   resolve: {
@@ -9,5 +9,5 @@ export default defineConfig({
       $: path.join(__dirname, "src"),
     },
   },
-  plugins: [vike(), kaioken()],
+  plugins: [vike(), kiru()],
 })

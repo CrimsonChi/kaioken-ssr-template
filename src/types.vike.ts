@@ -9,8 +9,8 @@ declare global {
 
       config: {
         title: string | ((ctx: PageContext) => string)
-        Page: Kaioken.FC
-        Layout: Kaioken.FC[]
+        Page: Kiru.FC
+        Layout: Kiru.FC[]
       }
 
       routeParams: Record<string, string>

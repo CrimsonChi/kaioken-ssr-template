@@ -1,3 +1,3 @@
-Welcome to your new Kaioken SSR project!
+Welcome to your new Kiru SSR project!
 
-Visit [https://kaioken.dev](https://kaioken.dev) for more information.
+Visit [https://kirujs.dev](https://kirujs.dev) for more information.
