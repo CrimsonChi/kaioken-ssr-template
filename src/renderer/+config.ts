@@ -1,4 +1,4 @@
-import type { Config, PageContextServer } from "vike/types"
+import type { Config } from "vike/types"
 
 export default {
   clientRouting: true,

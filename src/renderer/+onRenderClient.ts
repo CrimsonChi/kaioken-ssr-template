@@ -1,5 +1,5 @@
 // https://vike.dev/onRenderClient
-import type { OnRenderClientAsync, PageContextClient } from "vike/types"
+import type { PageContextClient } from "vike/types"
 import { hydrate } from "kiru/ssr/client"
 import type { AppContext } from "kiru"
 import { getTitle } from "./utils"
@@ -7,7 +7,7 @@ import { App } from "./App"
 
 let appContext: AppContext<{ pageContext: PageContextClient }> | undefined
 
-export const onRenderClient: OnRenderClientAsync = async (pageContext) => {
+export const onRenderClient = async (pageContext: PageContextClient) => {
   const container = document.getElementById("page-root")!
 
   if (pageContext.isHydration || !appContext) {
