@@ -5,8 +5,8 @@ import { renderToString } from "kiru"
 import { getTitle } from "./utils"
 import { App } from "./App"
 
-export const onRenderHtml = async (pageContext: PageContextServer) => {
-  const pageHtml = renderToString(App, { pageContext })
+export const onRenderHtml = (pageContext: PageContextServer) => {
+  const pageHtml = renderToString(<App pageContext={pageContext} />)
   return escapeInject`<!DOCTYPE html>
     <html lang="en">
       <head>
